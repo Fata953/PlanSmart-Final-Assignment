@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PlanSmart | School Trip Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PlanSmart</h1>
+        <p>School Trip Planner</p>
+    </header>
+
+    <main>
+
+<section>
+    <h2>Plan Your School Trip</h2>
+
+    <p>
+        PlanSmart helps teachers prepare for school trips by checking
+        the destination, weather and useful trip information.
+    </p>
+
+    <form id="tripForm">
+
+        <div>
+            <label for="destination">Destination city or town:</label>
+            <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="e.g. London"
+                required
+            >
+        </div>
+
+
+<div>
+    <label for="country">Country:</label>
+    <input
+        type="text"
+        id="country"
+        name="country"
+        placeholder="e.g. United Kingdom"
+        required
+    >
+</div>
+
+        <div>
+            <label for="tripDate">Trip date:</label>
+            <input
+                type="date"
+                id="tripDate"
+                name="tripDate"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="ageGroup">Age group:</label>
+            <select id="ageGroup" name="ageGroup" required>
+                <option value="">Select an age group</option>
+                <option value="Early Years">Early Years</option>
+                <option value="Primary">Primary</option>
+                <option value="Secondary">Secondary</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tripType">Trip type:</label>
+            <select id="tripType" name="tripType" required>
+                <option value="">Select a trip type</option>
+                <option value="Museum">Museum</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Educational">Educational</option>
+                <option value="Cultural">Cultural</option>
+            </select>
+        </div>
+
+        <button type="submit">
+            Plan My Trip
+        </button>
+        <button type="reset" id="resetButton">
+    Clear Form
+</button>
+
+    </form>
+
+    <p id="formMessage" aria-live="polite"></p>
+
+<div id="destinationResult" hidden>
+    <h3>Destination Details</h3>
+
+    <p>
+        <strong>Location:</strong>
+        <span id="locationName"></span>
+    </p>
+
+    <p>
+        <strong>Country:</strong>
+        <span id="countryName"></span>
+    </p>
+</div>
+
+<div id="weatherResult" aria-live="polite" hidden>
+    <h3>Trip Weather</h3>
+    <p id="weatherMessage"></p>
+</div>
+
+<div id="adviceResult" aria-live="polite" hidden>
+    <h3>School Trip Advice</h3>
+    <p id="adviceMessage"></p>
+</div>
+
+<div id="checklistResult" aria-live="polite" hidden>
+    <h3>What to Bring</h3>
+    <ul id="checklistList"></ul>
+</div>
+
+    
+</section>
+
+    </main>
+
+    <footer>
+        <p>PlanSmart School Trip Planner</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

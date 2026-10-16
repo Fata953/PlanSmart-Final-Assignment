@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #243447;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1f5f78;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.1rem;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1f5f78;
+    margin-top: 0;
+}
+
+form {
+    margin-top: 25px;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8c5cc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 3px solid #b9e1ef;
+    border-color: #1f5f78;
+}
+
+button {
+    background-color: #1f5f78;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17485c;
+}
+
+button:focus {
+    outline: 3px solid #b9e1ef;
+}
+
+#formMessage {
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #52656f;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 35px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+#weatherResult,
+#adviceResult,
+#destinationResult,
+#checklistResult {
+
+    margin-top: 20px;
+    padding: 18px;
+    background-color: #f0f7fa;
+    border-left: 5px solid #1f5f78;
+    border-radius: 8px;
+}
+
+#weatherResult h3,
+#adviceResult h3,
+#destinationResult h3,
+#checklistResult h3 {
+    #checklistList {
+    padding-left: 22px;
+    margin-bottom: 0;
+}
+
+#checklistList li {
+    margin-bottom: 7px;
+}
+
+    margin-top: 0;
+    color: #1f5f78;
+}
+#resetButton {
+    background-color: #6c757d;
+    margin-left: 10px;
+}
+
+#resetButton:hover {
+    background-color: #545b62;
+}
+@media (max-width: 500px) {
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #resetButton {
+        margin-left: 0;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
